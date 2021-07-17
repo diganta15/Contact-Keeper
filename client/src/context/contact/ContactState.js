@@ -14,7 +14,7 @@ import {
 	SET_ALERT,
 	REMOVE_ALERT,
 } from "../types";
-import contactContext from "./contactContext";
+
 
 const ContactState = props =>{
     const initialState = {
@@ -78,7 +78,7 @@ const ContactState = props =>{
         dispatch({ type: CLEAR_FILTER })
     }
     return(
-        <contactContext.Provider value={{
+        <ContactContext.Provider value={{
             contacts:state.contacts,
             current:state.current,
             filtered:state.filtered,
@@ -91,7 +91,7 @@ const ContactState = props =>{
             clearFilterContacts  
         }}>
             {props.children}
-        </contactContext.Provider>
+        </ContactContext.Provider>
     )
 };
 
