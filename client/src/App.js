@@ -34,7 +34,7 @@ function App() {
 							</div>
 						</Fragment>
 					</Router>
-				</AlertState>
+				</AlertState>	
 			
 			</ContactState>
 		</AuthState>
